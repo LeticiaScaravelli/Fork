@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+      <div class="right">
+        <div class="form-box">
+          <center><img src="Captura de tela 2025-06-01 204452.png" width="300px" ></center><br>
+          <form>
+            <input type="text" placeholder="Nome:" />
+            
+            <input type="tel" placeholder="Telefone:" />
+
+            <input type="email" placeholder="Email:" />
+
+            <input type="text" placeholder="Procedimento:" />
+
+            <input type="text" placeholder="Profissional:" />
+
+            <input type="date" name="dia" />
+
+            <input type="time" name="horario" />
+
+            <button type="submit"><b>Agendar</b></button>
+          </form>
+        </div>
+      </div>
+    </div>
+   <script>
+    
+    function frase(){
+        n = document.getElementById("nome").value;
+        u = document.getElementById("unha").value;
+        d = document.getElementById("data").value;
+        h = document.getElementById("hora").value;
+
+        document.getElementById("resultado").innerHTML = "Olá "+n+", Nossa sessão as "+h+ " no dia "+d+ " para fazer seu alongamento <br> no formato "+u+" está marcada!!"
+    }
+    ///
+   </script>
+</body>
+</html>
